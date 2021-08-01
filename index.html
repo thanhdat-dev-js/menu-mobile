@@ -633,10 +633,15 @@
                     <i class="fa fa-th"></i>
                     <span>Danh Mục</span>
                 </a>
-                <a href="#">
+                <a href="#" class="dropup">
                     <i class="fas fa-search"></i>
                     <span>Tìm Kiếm</span>
                 </a>
+                <ul class="footer__contact--menu">
+                    <li><a href=#">Nhắn tin qua facebook</a></li>
+                    <li><a href="#">Nhắn tin qua zalo</a></li>
+                    <li><a href="#">Nhắn tin trực tuyến</a></li>
+                </ul>
                 <a href="#">
                     <i class="fas fa-newspaper"></i>
                     <span>Tin tức</span>
@@ -708,6 +713,19 @@
         button.addEventListener('click', () => {
             var menu = document.querySelector('.menu__mobile');
             menu.classList.add('active');
+        })
+
+
+        var dropup = document.querySelector('.dropup');
+        dropup.addEventListener('click', e => {
+            e.preventDefault();
+            var ulList = document.querySelector('.dropup ~ ul');
+            if (ulList.classList.contains('active')) {
+                ulList.classList.remove('active');
+            }
+            else {
+                ulList.classList.add('active');
+            }
         })
     </script>
 </body>

@@ -137,6 +137,7 @@ body {
   width: 100%;
   padding: 5px 0;
   height: 41px;
+  position: relative;
 }
 .menu__mobile--bottom a {
   width: 20%;
@@ -179,6 +180,22 @@ body {
 }
 .menu__mobile .nav--active {
   background-color: #2f2a35;
+}
+
+.footer__contact--menu {
+  position: absolute;
+  background-color: #e7e8ec;
+  display: none;
+  top: -115px;
+  left: 40%;
+  height: 115px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  box-shadow: 2px 0px 2px 1px rgba(204, 204, 204, 0.616);
+}
+.footer__contact--menu li {
+  padding: 10px 10px;
 }
 
 @media (max-width: 500px) {
